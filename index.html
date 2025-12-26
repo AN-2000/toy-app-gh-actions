@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy App - gh actions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      li {
+        list-style: none;
+      }
+      #post-list li {
+        border-bottom: 1px solid;
+      }
+      #user-list li {
+        cursor: pointer;
+      }
+      #user-list li.active {
+        background-color: lightgray;
+      }
+      .container {
+        display: flex;
+      }
+      .child-container {
+        flex: 1;
+        border: 1px solid;
+      }
+      .container ul {
+        width: 100%;
+        min-height: 100%;
+      }
+      .status {
+        padding: 2px;
+        margin: 2px;
+        display: inline-block;
+        border-radius: 8px;
+      }
+      .status.pending {
+        background-color: lightyellow;
+      }
+      .status.completed {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child-container">
+        <h2>Users</h2>
+        <ul id="user-list"></ul>
+      </div>
+      <div class="child-container">
+        <h2>Tasks</h2>
+        <ul id="post-list"></ul>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="view.js"></script>
+  </body>
+</html>
