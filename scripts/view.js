@@ -17,7 +17,7 @@ const showPosts = async (e) => {
   postList.innerHTML = listString;
 };
 
-userList.addEventListener("click", showPosts);
+userList.addEventListener("dblclick", showPosts)
 
 const loadApp = async () => {
   const data = await fetchUsers();
