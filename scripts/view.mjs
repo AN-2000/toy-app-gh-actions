@@ -1,3 +1,5 @@
+import { getPosts, fetchUsers } from "./data.mjs";
+
 const userList = document.querySelector("#user-list");
 const postList = document.querySelector("#post-list");
 let currentActiveUserEl = null;
